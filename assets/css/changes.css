@@ -1,0 +1,335 @@
+/*CSS for timer*/
+
+#clockdiv {
+    font-family: sans-serif;
+    display: block;
+    float: left;
+    color: #fff;
+    margin-left: -10%;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+#clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    background: #2e3141;
+    display: inline-block;
+}
+
+#clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: #45558D;
+    display: inline-block;
+}
+
+.smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+/*Register Button*/
+a.button {
+  display: block;
+  position: relative;
+  float: left;
+  width: 220px;
+  padding: 0;
+  margin: 30px 20px 10px 30px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 5px;
+  transition: all 0.2s ;
+}
+
+a.button:hover, a.button:active{
+  background-color: transparent !important;
+}
+
+/* FLOAT */
+.btnFloat {
+  background: none;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btnFloat:before {
+  content: 'Register Now!!';
+  color: black;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 50px;
+  border-radius: 5px;
+  transition: all 0.2s ;
+  background: #45558D;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.4);
+}
+
+.btnFloat:hover:before {
+  margin-top: -2px;
+  margin-left: 0px;
+  transform: scale(1.1,1.1);
+  -ms-transform: scale(1.1,1.1);
+  -webkit-transform: scale(1.1,1.1);
+  box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.25);
+}
+
+#auditions{
+  margin: 0 0 0 30%;
+  overflow: auto;
+}
+
+#auditions > h1{
+  margin-left: 20%;
+}
+
+#clockdiv{
+  margin-left: 0%;
+}
+
+
+/* MEMBERS PIC */
+.circle {
+  display: block;
+  background-color: #fafafa;
+  border-radius: 50%;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  height: 200px;
+  width: 200px;
+}
+
+#member1{
+  background-image:url("images/members/ak.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position:center;
+  width: 100%;
+  height: 200px;
+}
+
+#member2{
+  background-image:url("images/members/sb.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position:center;
+  width: 100%;
+  height: 200px;
+}
+
+#member3{
+  background-image:url("images/members/nm.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position:center;
+  width: 100%;
+  height: 300px;
+}
+
+#member4{
+  background-image:url("images/members/pk.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position:center;
+  width: 100%;
+  height: 200px;
+}
+
+#member5{
+    background-image:url("images/members/lk.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+    width: 100%;
+    height: 220px;
+}
+
+.membox{
+  background-color: transparent;
+  /*float: left;*/
+  display: inline-block;
+  margin-left: 20px;
+  margin-bottom: 20px;
+
+}
+
+h4.name{
+  padding-bottom: 1em;
+  padding-top: 1em;
+  border-bottom: solid 2px green;
+}
+
+.ft{
+  float: none;
+}
+
+/* MEDIA SCREENS */
+
+@media screen and (max-width: 1280px){
+  a.button{
+    width: 30%;
+  }
+
+  .btnFloat:before{
+    width: 80%;
+    font-size: 85%;
+  }
+
+}
+
+@media screen and (max-width: 925px){
+  #auditions {
+    margin-left: 20%;
+  }
+  
+  #clockdiv{
+    width: 80%;
+  }
+
+  #clockdiv > div {
+    width: 20%;
+  }
+
+  #clockdiv div > span{
+    font-size: 80%;
+    padding-left: 20%;
+    width: 90%;
+  }
+  
+  .smalltext {
+    font-size: 50%;
+  }
+  
+  a.button{
+    margin-left: 26%;
+  }
+
+  .btnFloat:before{
+    width: 100%;
+    font-size: 100%;
+  }
+
+  .circle{
+    width: 172px;
+    height: 172px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  #auditions {
+    margin-left: 14%;
+    overflow: hidden;
+  }
+
+  #auditions > h1 {
+    font-size: 80%;
+  }
+
+  #clockdiv > *{
+    width: 20%;
+  }
+
+  #clockdiv div > span{
+    padding: 0;
+  }
+
+  .smalltext {
+    font-size: 40%;
+  }
+  
+  a.button {
+    margin-left: 22%;
+  }
+
+  .btnFloat:before{
+    width: 130%;
+    font-size: 100%;
+  }
+
+  .circle{
+    height: 122px;
+    width: 122px;
+  }
+
+  .membox{
+    margin-left: 50px;
+  }
+
+  #member1{
+    height: 120px;
+  }
+  
+  #member2{
+    height: 120px;
+  }
+
+  #member3{
+    height: 180px;
+  }
+
+  #member4{
+    height: 120px;
+  }
+
+  #member5{
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  
+  #auditions > h1{
+    margin-left: 9%;
+  }
+  
+  #auditions {
+    width: 100%;
+    margin: 0 0 0 8%;
+  }
+
+  #clockdiv > div {
+    padding: 0;
+    width: 21%;
+  }
+
+  #clockdiv div > span {
+    width: 75%;
+  }
+
+  a.button {
+    width: 40%;
+    margin: 3% 0 0 16%;
+  }
+
+  .members{
+    display: inline;
+    justify-content: center;
+  }
+
+}
+
+@media screen and (max-width: 410px){
+  .circle{
+    height: 90px;
+    width: 90px;
+  }
+  
+  .membox{
+    margin:0;
+    margin-left: 10%;
+  }
+  .membox > h4 {
+    font-size: 11px;
+  }
+
+  .membox > p {
+    font-size: 100%;
+  }
+}
